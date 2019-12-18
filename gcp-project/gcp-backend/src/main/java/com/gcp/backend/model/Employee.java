@@ -14,14 +14,14 @@ import lombok.Data;
  *
  */
 
-@Entity
-@Data
+
+//@Data
 //@Table(name = "gcpbackend_message")
-@Table(name = "users_database")
+//@Table(name = "users_database")
+@Entity
 public class Employee {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
 	private long id;
 	private String firstName;
 	private String lastName;
