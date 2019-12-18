@@ -163,6 +163,10 @@
         </resource>
     </resources>
        </build>
+	   
+	   
+	   <profiles>
+ 
 <profile>
     <id>cloud</id>
     <properties>
@@ -172,6 +176,8 @@
         <activeByDefault>true</activeByDefault>
     </activation>
 </profile>
+</profiles>
+ 
 
 
        <repositories>
