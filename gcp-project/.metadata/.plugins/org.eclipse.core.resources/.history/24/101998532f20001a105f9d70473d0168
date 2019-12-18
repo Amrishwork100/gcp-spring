@@ -1,0 +1,6 @@
+spring.cloud.gcp.sql.enabled=true
+spring.cloud.gcp.sql.database-name=gcpproject
+spring.cloud.gcp.sql.instance-connection-name=appdemo-260905:us-central1:gcpproject
+spring.datasource.hikari.maximum-pool-size=5
+spring.main.allow-bean-definition-overriding=true
+management.metrics.web.server.auto-time-requests=false

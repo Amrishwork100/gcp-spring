@@ -1,0 +1,5 @@
+package com.gcp.backend.exception;
+
+public class ResourceNotFoundException {
+
+}

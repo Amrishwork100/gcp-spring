@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;angular8-springboot/proxy.config.json&apos; to &apos;proxy.conf.json&apos;" description="Rename resource &apos;proxy.config.json&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="proxy.config.json" name="proxy.conf.json" stamp="1576527764796" updateReferences="true"/>
+</session>
