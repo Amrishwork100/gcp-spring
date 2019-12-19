@@ -53,7 +53,7 @@ public class EmployeeController {
         return ResponseEntity.ok().body(employee);
     }
     
-    @PostMapping("/employees")
+    @GetMapping("/employees")
     public Employee createEmployee() {
 		
 		Employee employee=new Employee();
