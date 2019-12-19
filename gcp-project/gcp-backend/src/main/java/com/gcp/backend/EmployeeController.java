@@ -54,13 +54,15 @@ public class EmployeeController {
     }
     
     @PostMapping("/employees")
-    public Employee createEmployee(@RequestBody Employee employee) {
+    public Employee createEmployee() {
 		
 		employee=new Employee();
     	employee.setEmailId("amrishwork100@gmail.com");
     	employee.setFirstName("Amrish");
     	employee.setLastName("Kumar");
-        return employeeRepository.save(employee);
+		
+		return employee;
+        //return employeeRepository.save(employee);
     }
 
     @PutMapping("/employees/{id}")
