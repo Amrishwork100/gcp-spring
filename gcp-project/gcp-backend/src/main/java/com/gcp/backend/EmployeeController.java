@@ -40,7 +40,7 @@ public class EmployeeController {
     	return "Spring boot";
     }
 
-    @GetMapping("/employees")
+    @GetMapping("/")
     public List<Employee> getAllEmployees() {
 		
 		EmployeeController ec=new EmployeeController();
