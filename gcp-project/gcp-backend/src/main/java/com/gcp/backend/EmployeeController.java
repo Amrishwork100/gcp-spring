@@ -56,7 +56,7 @@ public class EmployeeController {
     @PostMapping("/employees")
     public Employee createEmployee() {
 		
-		employee=new Employee();
+		Employee employee=new Employee();
     	employee.setEmailId("amrishwork100@gmail.com");
     	employee.setFirstName("Amrish");
     	employee.setLastName("Kumar");
