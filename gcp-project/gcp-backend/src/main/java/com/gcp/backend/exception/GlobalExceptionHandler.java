@@ -13,6 +13,8 @@ import org.springframework.web.context.request.WebRequest;
  *
  */
 
+@Configuration(proxyBeanMethods = false)
+@Component
 @ControllerAdvice
 public class GlobalExceptionHandler {
 	
