@@ -42,6 +42,10 @@ public class EmployeeController {
 
     @GetMapping("/employees")
     public List<Employee> getAllEmployees() {
+		
+		EmployeeController ec=new EmployeeController();
+		ec.createEmployee();
+		
         return employeeRepository.findAll();
     }
 
