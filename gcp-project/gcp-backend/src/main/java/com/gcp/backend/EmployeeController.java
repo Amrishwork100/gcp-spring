@@ -40,11 +40,16 @@ public class EmployeeController {
     	return "Spring boot";
     }
 
-    @GetMapping("/")
+    @GetMapping("/employees")
     public List<Employee> getAllEmployees() {
 		
+		Employee employee=new Employee();
+    	employee.setEmailId("amrishwork100@gmail.com");
+    	employee.setFirstName("Amrish");
+    	employee.setLastName("Kumar");
+		
 		EmployeeController ec=new EmployeeController();
-		ec.createEmployee();
+		ec.createEmployee(employee);
 		
         return employeeRepository.findAll();
     }
@@ -58,13 +63,7 @@ public class EmployeeController {
     }
     
     @PostMapping("/employees")
-    public Employee createEmployee() {
-		
-		Employee employee=new Employee();
-    	employee.setEmailId("amrishwork100@gmail.com");
-    	employee.setFirstName("Amrish");
-    	employee.setLastName("Kumar");
-		
+    public Employee createEmployee(@RequestBody Employee employee) {
 		//return employee;
         return employeeRepository.save(employee);
     }

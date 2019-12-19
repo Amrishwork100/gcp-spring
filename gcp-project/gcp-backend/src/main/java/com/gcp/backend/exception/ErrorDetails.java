@@ -8,9 +8,8 @@ import java.util.Date;
 /**
  * @author M1048474
  *
+ */
  
-@Configuration(proxyBeanMethods = false)
-@Component
 public class ErrorDetails {
     private Date timestamp;
     private String message;
