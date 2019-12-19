@@ -61,8 +61,8 @@ public class EmployeeController {
     	employee.setFirstName("Amrish");
     	employee.setLastName("Kumar");
 		
-		return employee;
-        //return employeeRepository.save(employee);
+		//return employee;
+        return employeeRepository.save(employee);
     }
 
     @PutMapping("/employees/{id}")
