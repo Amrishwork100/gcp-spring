@@ -627,19 +627,19 @@ let EmployeeService = class EmployeeService {
         this.baseUrl = '/api/v1/employees';
     }
     getEmployee(id) {
-        return this.http.get(`http://localhost:8081/api/v1/employees/${id}`);
+        return this.http.get(`http://localhost:8082/api/v1/employees/${id}`);
     }
     createEmployee(employee) {
-        return this.http.post('http://localhost:8081/api/v1/employees', employee);
+        return this.http.post('http://localhost:8082/api/v1/employees', employee);
     }
     updateEmployee(id, value) {
-        return this.http.put(`http://localhost:8081/api/v1/employees}/${id}`, value);
+        return this.http.put(`http://localhost:8082/api/v1/employees}/${id}`, value);
     }
     deleteEmployee(id) {
-        return this.http.delete(`http://localhost:8081/api/v1/employees/${id}`, { responseType: 'text' });
+        return this.http.delete(`http://localhost:8082/api/v1/employees/${id}`, { responseType: 'text' });
     }
     getEmployeesList() {
-        return this.http.get(`http://localhost:8081/api/v1/employees`);
+        return this.http.get(`http://localhost:8082/api/v1/employees`);
     }
 };
 EmployeeService.ctorParameters = () => [

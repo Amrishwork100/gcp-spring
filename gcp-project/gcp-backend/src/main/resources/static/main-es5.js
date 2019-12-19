@@ -639,19 +639,19 @@
                     this.baseUrl = '/api/v1/employees';
                 }
                 EmployeeService.prototype.getEmployee = function (id) {
-                    return this.http.get("http://localhost:8081/api/v1/employees/" + id);
+                    return this.http.get("http://localhost:8082/api/v1/employees/" + id);
                 };
                 EmployeeService.prototype.createEmployee = function (employee) {
-                    return this.http.post('http://localhost:8081/api/v1/employees', employee);
+                    return this.http.post('http://localhost:8082/api/v1/employees', employee);
                 };
                 EmployeeService.prototype.updateEmployee = function (id, value) {
-                    return this.http.put("http://localhost:8081/api/v1/employees}/" + id, value);
+                    return this.http.put("http://localhost:8082/api/v1/employees}/" + id, value);
                 };
                 EmployeeService.prototype.deleteEmployee = function (id) {
-                    return this.http.delete("http://localhost:8081/api/v1/employees/" + id, { responseType: 'text' });
+                    return this.http.delete("http://localhost:8082/api/v1/employees/" + id, { responseType: 'text' });
                 };
                 EmployeeService.prototype.getEmployeesList = function () {
-                    return this.http.get("http://localhost:8081/api/v1/employees");
+                    return this.http.get("http://localhost:8082/api/v1/employees");
                 };
                 return EmployeeService;
             }());
