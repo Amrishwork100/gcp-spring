@@ -14,13 +14,11 @@ import lombok.Data;
  *
  */
 
-
 @Entity
+//@Table(name = "employees")
 public class Employee {
 
 
-    @Id
-	@GeneratedValue
 	private long id;
 	private String firstName;
 	private String lastName;
@@ -36,7 +34,8 @@ public class Employee {
 		this.emailId = emailId;
 	}
 
-	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long getId() {
 		return id;
 	}
@@ -45,7 +44,7 @@ public class Employee {
 		this.id = id;
 	}
 
-	
+	@Column(name = "first_name", nullable = false)
 	public String getFirstName() {
 		return firstName;
 	}
@@ -54,7 +53,7 @@ public class Employee {
 		this.firstName = firstName;
 	}
 
-	
+	@Column(name = "last_name", nullable = false)
 	public String getLastName() {
 		return lastName;
 	}
@@ -63,7 +62,7 @@ public class Employee {
 		this.lastName = lastName;
 	}
 
-	
+	@Column(name = "email_address", nullable = false)
 	public String getEmailId() {
 		return emailId;
 	}
