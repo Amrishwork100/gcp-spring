@@ -53,7 +53,7 @@ public class EmployeeController {
 		return ResponseEntity.ok().body(employee);
 	}
 
-	@PostMapping("/employees")
+	@PostMapping("/employees/save")
 	public Employee createEmployee(@RequestBody Employee employee) {
 		/*
 		 * employee=new Employee(); employee.setEmailId("amrishwork100@gmail.com");
