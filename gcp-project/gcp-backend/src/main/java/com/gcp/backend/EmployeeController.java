@@ -50,15 +50,18 @@ public class EmployeeController {
 	public ResponseEntity<Optional<Employee>> getEmployeeById(@PathVariable(value = "id") Long employeeId) {
 		Optional<Employee> employee = employeeRepository.findById(employeeId);
 
+		System.out.println("get method 1");
 		return ResponseEntity.ok().body(employee);
+		
 	}
 
-	@PostMapping("/employees/save")
+	@PostMapping("/employees")
 	public Employee createEmployee(@RequestBody Employee employee) {
 		/*
 		 * employee=new Employee(); employee.setEmailId("amrishwork100@gmail.com");
 		 * employee.setFirstName("Amrish"); employee.setLastName("Kumar");
 		 */
+		System.out.println("post method 1");
 		return employeeRepository.save(employee);
 	}
 
@@ -72,6 +75,7 @@ public class EmployeeController {
 		 * employee.setLastName(employeeDetails.getLastName());
 		 * employee.setFirstName(employeeDetails.getFirstName());
 		 */
+		System.out.println("put method 1");
 		Employee updatedEmployee = employeeRepository.save(employeeDetails);
 		return new ResponseEntity(updatedEmployee, HttpStatus.CREATED);
 	}
@@ -83,6 +87,7 @@ public class EmployeeController {
 		employeeRepository.delete(employeeId);
 		Map<String, Boolean> response = new HashMap<>();
 		response.put("deleted", Boolean.TRUE);
+		System.out.println("delete method 1");
 		return response;
 	}
 }
